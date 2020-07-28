@@ -1,0 +1,67 @@
+:local(.container) {
+  border: 1px solid #eee;
+  padding: 20px;
+  color: #333;
+  background: #fefefa;
+  border-radius: 5px;
+  min-height: 86px;
+  box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.2);
+  display: grid;
+  align-items: center;
+}
+:local(.withContent) {
+  grid-template-areas:
+    "city description"
+    "info info";
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+}
+:local(.loading) {
+  text-align: center;
+}
+:local(.info) {
+  grid-area: info;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "icon temp moreinfo";
+  grid-template-columns: 60px 100px 1fr;
+}
+:local(.icon) {
+  grid-area: icon;
+  text-align: center;
+}
+
+:local(.temperature) {
+  grid-area: temp;
+  font-size: 36px;
+}
+
+:local(.moreinfo) {
+  color: #999;
+  font-size: 12px;
+  grid-area: moreinfo;
+}
+
+:local(.city) {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  grid-area: city;
+}
+:local(.description) {
+  color: #999;
+  font-size: 16px;
+  text-transform: capitalize;
+  grid-area: description;
+  text-align: right;
+}
+
+:local(.sun) {
+  color: #fc9;
+  font-size: 40px;
+}
+
+:local(.cloud) {
+  color: #bcd;
+  font-size: 40px;
+}

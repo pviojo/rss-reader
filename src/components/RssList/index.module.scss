@@ -1,0 +1,40 @@
+
+:local(.items){
+  display: grid;
+  width:100%;
+  color:#444;
+  
+}
+:local(.item){
+  display: grid;
+  padding:25px 5px;
+  border-bottom:1px solid #ccc;
+  grid-template-areas: "info buttons";
+  grid-template-columns: 1fr 15px;
+  align-items: center;
+  gap:25px;
+  :local(.info){
+    grid-area: info
+  }
+  :local(.buttons){
+    grid-area: buttons;
+    text-align:right;
+  }
+  :local(.date){
+    font-size:10px;
+    margin-bottom: 3px;
+  }
+  :local(.title){
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  :local(.description){
+    color:#777;
+    font-size: 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: 3.6em;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+  }
+}
