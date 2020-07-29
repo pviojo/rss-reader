@@ -5,7 +5,7 @@ import RssRead from "./components/RssRead";
 import RssList from "./components/RssList";
 
 export default function App() {
-  const [url, setUrl] = useState("https://venganzasdelpasado.com.ar/posts.rss");
+  const [url] = useState("https://venganzasdelpasado.com.ar/posts.rss");
   return (
     <div className="App">
       <div
